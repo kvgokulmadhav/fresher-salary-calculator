@@ -53,7 +53,7 @@ def fmt(num):
 # --------------------------
 # Header Section & Currency Selector
 # --------------------------
-st.markdown("<h1 style='text-align: center;'>🎓 Fresher Minimum Salary Calculator</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'> Fresher Minimum Salary Calculator</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 1.2rem; color: #555;'>Find out exactly what <strong>Minimum Starting Salary (CTC)</strong> you need to ask for to comfortably pay off your education costs AND afford your monthly living expenses.</p>", unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
