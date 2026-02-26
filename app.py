@@ -53,14 +53,13 @@ def fmt(num):
 # --------------------------
 # Header Section & Currency Selector
 # --------------------------
-col_title, col_curr = st.columns([4, 1])
+st.markdown("<h1 style='text-align: center;'>🎓 Fresher Minimum Salary Calculator</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 1.2rem; color: #555;'>Find out exactly what <strong>Minimum Starting Salary (CTC)</strong> you need to ask for to comfortably pay off your education costs AND afford your monthly living expenses.</p>", unsafe_allow_html=True)
 
-with col_title:
-    st.markdown("<h1>🎓 Fresher Minimum Salary Calculator</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 1.2rem; color: #555;'>Find out exactly what <strong>Minimum Starting Salary (CTC)</strong> you need to ask for to comfortably pay off your education costs AND afford your monthly living expenses.</p>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 
+_, col_curr, _ = st.columns([1, 2, 1])
 with col_curr:
-    st.markdown("<div style='text-align: right; padding-top: 10px;'>", unsafe_allow_html=True) 
     currency_dict = {
         "INR": "₹",
         "USD": "$",
@@ -68,11 +67,16 @@ with col_curr:
         "GBP": "£",
         "CAD": "C$"
     }
-    selected_currency = st.selectbox("Currency:", list(currency_dict.keys()), index=0) # Default INR
+    # Using a horizontal radio button looks much cleaner globally than a bulky selectbox in the corner
+    selected_currency = st.radio(
+        "🌍 **Choose your Currency:**", 
+        list(currency_dict.keys()), 
+        index=0, 
+        horizontal=True
+    )
     cy = currency_dict[selected_currency]
-    st.markdown("</div>", unsafe_allow_html=True)
 
-st.markdown("<hr style='margin-top: 5px; margin-bottom: 20px;'>", unsafe_allow_html=True)
+st.markdown("<hr style='margin-top: 10px; margin-bottom: 20px;'>", unsafe_allow_html=True)
 
 # --------------------------
 # Data Definitions
