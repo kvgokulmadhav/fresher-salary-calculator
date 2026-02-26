@@ -258,3 +258,11 @@ st.bar_chart(chart_data, x="Category", y="Amount", use_container_width=True, col
 
 st.markdown("---")
 st.markdown("<p style='text-align: center; font-size: 1.1rem;'>🔥 You've got this! Start planning your career moves today! 💪</p>", unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+st.info("""
+**⚠️ Important Reality Check & Disclaimer:**
+* **Market Realities:** This calculator shows the salary you mathematically *need*, not necessarily what the job market is currently offering. If your required CTC is unrealistically high, try increasing your Break-Even Target years.
+* **Taxes & Interest:** This tool uses a simplified flat tax rate and does not account for compound interest on student loans or progressive tax brackets. 
+* **Not Financial Advice:** This is an estimation tool for career planning. Always do your own thorough research before making financial or educational commitments.
+""")
