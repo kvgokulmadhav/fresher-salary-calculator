@@ -1,7 +1,7 @@
 # 🎓 Fresher ROI & Minimum Salary Calculator (Rebuilt)
 
 A complete, interactive Streamlit web application designed perfectly to the requirements. It calculates your Target Gross Yearly Salary (CTC) based on education details, living expenses, and tax rates.
-USE IT NOW: https://fresher-salary-calculator.streamlit.app/
+**USE IT NOW : https://fresher-salary-calculator.streamlit.app/**
 ## 🌟 Features Included
 
 1. **Global Settings**: Choose any currency (INR, USD, EUR, GBP, CAD) and see dynamic symbol updates across the entire app.
